@@ -1,0 +1,33 @@
+{
+  "name": "weblab1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix",
+    "format": "npx prettier .",
+    "format:fix": "npx prettier --write .",
+    "lint:style": "stylelint \"src/**/*.+(scss|css|svelte)\"",
+    "lint:style:fix": "stylelint \"src/**/*.+(scss|css|svelte)\" --fix",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GrigoriyUstymenko/web-lab1.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GrigoriyUstymenko/web-lab1/issues"
+  },
+  "homepage": "https://github.com/GrigoriyUstymenko/web-lab1#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "husky": "^7.0.2",
+    "prettier": "^2.4.0",
+    "stylelint": "^13.13.1"
+  }
+}

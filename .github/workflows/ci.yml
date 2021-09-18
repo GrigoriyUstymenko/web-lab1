@@ -8,4 +8,5 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
+          cache: 'npm'
       - run: npm ci && npm run lint && npm run format && npm run lint:style

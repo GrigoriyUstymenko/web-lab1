@@ -6,12 +6,12 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint .",
-    "lint:fix": "npm run lint -- --fix",
-    "format": "npx prettier .",
-    "format:fix": "npx prettier --write .",
-    "lint:style": "stylelint \"src/**/*.css\"",
-    "lint:style:fix": "stylelint \"src/**/*.css\" --fix",
+    "lint": "eslint . --ignore-path .gitignore",
+    "lint:fix": "npm run lint -- --fix --ignore-path .gitignore",
+    "format": "npx prettier . --ignore-path .gitignore",
+    "format:fix": "npx prettier --write . --ignore-path .gitignore",
+    "lint:style": "stylelint \"src/**/*.css\" --ignore-path .gitignore",
+    "lint:style:fix": "stylelint \"src/**/*.css\" --fix --ignore-path .gitignore",
     "prepare": "husky install"
   },
   "repository": {

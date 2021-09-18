@@ -10,8 +10,8 @@
     "lint:fix": "npm run lint -- --fix",
     "format": "npx prettier .",
     "format:fix": "npx prettier --write .",
-    "lint:style": "stylelint \"src/**/*.+(scss|css|svelte)\"",
-    "lint:style:fix": "stylelint \"src/**/*.+(scss|css|svelte)\" --fix",
+    "lint:style": "stylelint \"src/**/*.css\"",
+    "lint:style:fix": "stylelint \"src/**/*.css\" --fix",
     "prepare": "husky install"
   },
   "repository": {

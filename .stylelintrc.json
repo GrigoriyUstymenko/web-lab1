@@ -13,8 +13,5 @@
     "declaration-colon-space-after": "always",
     "selector-pseudo-element-colon-notation": "double"
   },
-  "ignoreFiles": [
-    "**/*.js",
-    "vendor/**/*.css"
-  ]
+  "ignoreFiles": ["**/*.js", "vendor/**/*.css"]
 }

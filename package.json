@@ -5,13 +5,14 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "build": "sass .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint .",
-    "lint:fix": "npm run lint -- --fix",
-    "format": "npx prettier .",
-    "format:fix": "npx prettier --write .",
-    "lint:style": "stylelint \"src/**/*.+(scss|css|svelte)\"",
-    "lint:style:fix": "stylelint \"src/**/*.+(scss|css|svelte)\" --fix",
+    "lint": "eslint . --ignore-path .gitignore --no-error-on-unmatched-pattern",
+    "lint:fix": "npm run lint -- --fix --ignore-path .gitignore",
+    "format": "prettier . --ignore-path .gitignore",
+    "format:fix": "prettier --write . --ignore-path .gitignore",
+    "lint:style": "stylelint \"**/*.+(css|scss)\" --ignore-path .gitignore",
+    "lint:style:fix": "stylelint \"**/*.+(css|scss)\" --fix --ignore-path .gitignore",
     "prepare": "husky install"
   },
   "repository": {
@@ -28,6 +29,7 @@
     "eslint": "^7.32.0",
     "husky": "^7.0.2",
     "prettier": "^2.4.1",
+    "sass": "^1.42.1",
     "stylelint": "^13.13.1"
   }
 }

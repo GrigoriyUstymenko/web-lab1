@@ -3,7 +3,7 @@
     "indentation": 2,
     "string-quotes": "single",
     "no-duplicate-selectors": true,
-    "color-hex-case": "upper",
+    "color-hex-case": "lower",
     "color-hex-length": "long",
     "color-named": "always-where-possible",
     "selector-combinator-space-after": "always",
@@ -13,8 +13,5 @@
     "declaration-colon-space-after": "always",
     "selector-pseudo-element-colon-notation": "double"
   },
-  "ignoreFiles": [
-    "**/*.js",
-    "vendor/**/*.css"
-  ]
+  "ignoreFiles": ["**/*.js", "vendor/**/*.css"]
 }
